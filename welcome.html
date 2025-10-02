@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #2a19ac, #891754);
+            background-repeat: no-repeat;
+            background-position: center;
+            color: aliceblue;
+            font-family: 'Fredoka', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-size: 40px;
+            transition: opacity 0.8s cubic-bezier(.4,0,.2,1);
+        }
+        body.fade-out {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="typed"></h1>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ["Today's mood "], 
+            typeSpeed: 100, 
+            backSpeed: 50,  
+            showCursor: true,
+            cursorChar: '|'
+        });
+
+        setTimeout(() => {
+            document.body.classList.add('fade-out');
+            setTimeout(() => {
+                window.location.href = 'index.html';
+            }, 800); 
+        }, 4000); 
+    </script>
+</body>
+</html>

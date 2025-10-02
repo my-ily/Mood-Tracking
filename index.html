@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Mood/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>Mood</title>
+</head>
+<body>
+    
+<section id="section1">
+    <h2>How feeling today</h2>
+    <div class="feelingList"></div>
+    <!-- <button>Go</button> -->
+</section>
+
+<section id="section2" style="display: none;">
+<h2>why you feeling like that!</h2>
+<div class="emojiPicked section2Picked"></div>
+
+<textarea name="" id="feelingInput"></textarea>
+<p class="reason">please enter a reason !</p>
+<button class="send">Go</button>
+</section>
+
+<section id="section3" style="display: none;">
+    <h2>Todays Feelings</h2>
+
+<div class="emojiPicked section3Picked"></div>
+
+<hr>
+<div class="AllMoods"></div>
+
+<button class="chartbtn">see the charAt</button>
+
+
+</section>
+
+
+<section id="section4" style="display:none;">
+  <h2>Mood Progress</h2>
+  <div class="">
+    <canvas id="mood-chart" width="400" height="200"></canvas> 
+
+  </div>
+<button onclick="goBack()">back</button>
+</section>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="/Mood/index.js"></script>
+</body>
+</html>
