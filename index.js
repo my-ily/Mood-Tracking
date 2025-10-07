@@ -163,9 +163,9 @@ function drawMoodChart() {
   });
 
   const ctx = document.getElementById('mood-chart');
-  if (!ctx) return; // إذا لم يوجد العنصر، لا ترسم
+  if (!ctx) return; 
 
-  // إذا كان هناك رسم بياني سابق، دمّره أولاً
+
   if (window.moodChartInstance) {
     window.moodChartInstance.destroy();
   }
