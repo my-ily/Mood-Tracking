@@ -3,7 +3,8 @@ javascript mood tracking
 # Mood Tracker
 
 A simple and interactive web app to track your daily mood, visualize your feelings, and reflect on your emotional journey.
-
+## live demo 
+https://my-ily.github.io/Mood-Tracking/
 ## Features
 
 - **Pick Your Mood:** Choose from 10 different moods, each with a unique emoji and color.
